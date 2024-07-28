@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #ff1744;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin:0 px;
+    padding: 20 px;
+    gap: 10px;
+    text-align: right;
+    display:inline-flex;
+}
+
+header nav ul li {
+    margin: 0;
+    text-align: right;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display:inline;
+}
+
+
+
+header nav ul li a:hover {
+    background-color: #ad132d;
+    border-radius: 5px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('https://zomato-landing-page.netlify.app/Images/Nav.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 200px 20px;
+    margin-top: 70px; /* To offset the fixed header */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #e01437;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #c01230;
+}
+
+/* Restaurant Section Styles */
+.restaurants {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.restaurants h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.restaurant-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.restaurant {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.restaurant h3 {
+    margin:  10;
+    font-size: 1.5em;
+}
+
+.restaurant p {
+    font-size:1.5em;
+    color: #555;
+}
+
+.restaurant:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #da0a0a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero input[type="text"] {
+        width: 100%;
+    }
+
+    .restaurant-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

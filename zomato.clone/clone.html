@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://logodownload.org/wp-content/uploads/2020/02/zomato-logo-0-2048x2046.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Zomato-Food Delivery</h1>
+            <nav>
+                <ul>
+                    <li><a href="clone.html">Home</a></li>
+                    <li><a href="collection.html">Restaurants</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="cont.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <section class="hero">
+        <div class="container">
+            <h2>Discover Great Food Near You</h2>
+            <form>
+                <input type="text" placeholder="Search for restaurants or cuisines">
+                <button type="submit" onclick="showAlert()">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="restaurants">
+        <div class="container">
+            <h2>Popular Restaurants</h2>
+            <div class="restaurant-list">
+                <div class="restaurant">
+                    <img src="restaurant1.jpg" alt="Restaurant 1">
+                    <h3>Felipe's</h3>
+                    <p>Italian, Pizza</p>
+                </div>
+                <div class="restaurant">
+                    <img src="https://www.discoverlosangeles.com/sites/default/files/images/2020-01/Xiaolongkan%20Hot%20Pot%20-%20Alhambra.jpg?width=2600&fit=bound&quality=72&auto=webp"" alt="Restaurant 2">
+                    <h3>Miso</h3>
+                    <p>Chinese, Noodles</p>
+                </div>
+                <div class="restaurant">
+                    <img src="https://e.telugurajyam.com/wp-content/uploads/2020/12/bastion2-1120x840.jpg" alt="Restaurant 3">
+                    <h3>Bastian</h3>
+                    <p>Indian, Curry</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Food Delivery Clone. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function showAlert(){
+            alert("Hey!,Please click on restaurants to explore more. Thank you :)");
+            
+        }
+    </script>
+
+</body>
+</html>
